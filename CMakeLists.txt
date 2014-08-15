@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( simplar )
+find_package( OpenCV REQUIRED )
+add_executable( app simplar.cpp )
+target_link_libraries( app ${OpenCV_LIBS} )
